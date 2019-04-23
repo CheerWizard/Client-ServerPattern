@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/registrationTextView"
+        android:layout_width="261dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/add_wedding_code"
+        android:textAlignment="center"
+        android:textColor="@color/mainColor"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iconImageView"
+        android:layout_width="265dp"
+        android:layout_height="159dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/logotype"
+        android:src="@drawable/icon_save_the_day"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registrationTextView" />
+
+    <EditText
+        android:id="@+id/wedCodeEditText"
+        android:layout_width="268dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/customed_edit_text"
+        android:hint="@string/A_0000"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iconImageView" />
+
+    <Button
+        android:id="@+id/addWedCodeBtn"
+        android:layout_width="211dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/mainColor"
+        android:text="@string/add"
+        android:textColor="@android:color/white"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.519"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wedCodeEditText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

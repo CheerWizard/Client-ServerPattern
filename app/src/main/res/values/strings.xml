@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">ConnectApp</string>
+    <string name="wedding">wedding</string>
+    <string name="invalid_email">Lo sentimos , debe introducir un correo  electrónico válido</string>
+    <string name="enter_email">Introduce tu email</string>
+    <string name="registration">Registrarse</string>
+    <string name="add_one_more">Añadir Otra</string>
+    <string name="logotype">Logotype</string>
+    <string name="vector">Vector</string>
+    <string name="ok">OK</string>
+    <string name="back_to_weddings">A mis bodas</string>
+    <string name="my_weddings">Mis Bodas</string>
+    <string name="return_">Volver</string>
+    <string name="invalid_wedding_code">Codigo de Boda erroneo. Por favor , pruebe de nuevo.</string>
+    <string name="add_wedding_code">Introduce el código de la boda</string>
+    <string name="A_0000">0000-A</string>
+    <string name="add">Añadir</string>
+    <string name="event_name">Event Name</string>
+    <string name="event_url">Event Web URL</string>
+    <string name="event_date">Event Date and Time</string>
+    <string name="conditions">Términos y condiciones</string>
+    <string name="field_is_empty">¡El campo está vacío!</string>
+    <string name="already_registered">El usuario ya existe , desea cargar las bodas de este usuario  o crear uno nuevo.</string>
+    <string name="new_account">Nuevo</string>
+    <string name="restore_account">Seguir</string>
+</resources>

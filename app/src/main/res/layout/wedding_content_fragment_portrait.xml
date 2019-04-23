@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:contentDescription="@string/vector"
+        android:id="@+id/vectorImageView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/backToMyWeddingTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/backToMyWeddingTextView" />
+
+    <TextView
+        android:id="@+id/backToMyWeddingTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/back_to_weddings"
+        android:textAlignment="center"
+        android:textColor="@color/mainColor"
+        android:textSize="22sp"
+        app:layout_constraintStart_toEndOf="@+id/vectorImageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/logotypeImageView"
+        android:layout_width="135dp"
+        android:layout_height="102dp"
+        android:contentDescription="@string/logotype"
+        android:src="@drawable/icon_save_the_day"
+        app:layout_constraintBottom_toBottomOf="@+id/backToMyWeddingTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/backToMyWeddingTextView"
+        app:layout_constraintVertical_bias="0.347" />
+
+    <WebView
+        android:id="@+id/urlWebView"
+        android:layout_width="match_parent"
+        android:layout_height="642dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logotypeImageView"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
