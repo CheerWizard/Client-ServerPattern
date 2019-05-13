@@ -8,6 +8,7 @@ import com.example.mockup.mvvm.business_logic.data.UserResponse;
 
 import io.reactivex.Single;
 import retrofit2.http.Body;
+import retrofit2.http.DELETE;
 import retrofit2.http.GET;
 import retrofit2.http.POST;
 import retrofit2.http.Path;
@@ -19,4 +20,6 @@ public interface MobileWebService {
     Single<UserResponse> postUser(@Body User user);
     @POST("api/mobile/createMatch")
     Single<EventResponse> postMatch(@Body Match match);
+    @DELETE("api/match/{codeId}")
+    void deleteMatch(@Path("codeId") final int codeId);
 }

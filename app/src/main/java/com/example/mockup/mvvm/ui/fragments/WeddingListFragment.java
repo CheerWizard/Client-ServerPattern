@@ -1,6 +1,7 @@
 package com.example.mockup.mvvm.ui.fragments;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
@@ -142,5 +143,10 @@ public class WeddingListFragment extends BaseFragment implements View.OnClickLis
         eventViewModel.setEvent(event);
         //begin transaction to another fragment
         FragmentDispatcher.dispatchAndMoveTo(getBaseActivity() , new WeddingContentFragment());
+    }
+
+    @Override
+    public void onDeleteEvent(Event event) {
+        Log.d(getClass().getName() , "On delete event with " + event.getCodeId());
     }
 }

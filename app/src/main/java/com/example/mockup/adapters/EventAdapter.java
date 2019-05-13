@@ -3,8 +3,10 @@ package com.example.mockup.adapters;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
+import com.daimajia.swipe.adapters.RecyclerSwipeAdapter;
 import com.example.mockup.R;
 import com.example.mockup.listeners.EventListener;
 import com.example.mockup.mvvm.business_logic.data.Event;
@@ -17,7 +19,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class EventAdapter extends RecyclerView.Adapter<EventAdapter.WeddingCodesViewHolder> {
+public class EventAdapter extends RecyclerSwipeAdapter<EventAdapter.WeddingCodesViewHolder> {
 
     private final List<Event> weddingList = new ArrayList<>();
     private EventListener eventListener;
@@ -53,10 +55,17 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.WeddingCodes
         return weddingList.size();
     }
 
+    @Override
+    public int getSwipeLayoutResourceId(int position) {
+        return R.id.swipe_wedding_code;
+    }
+
     class WeddingCodesViewHolder extends RecyclerView.ViewHolder{
         //bindView annotation will automatically identify the particular views
         @BindView(R.id.wedNameTextView)
         TextView wedNameTextView;
+        @BindView(R.id.deleteBtn)
+        Button deleteButton;
         //global var
         private Event event;
 
@@ -66,6 +75,9 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.WeddingCodes
             view.setOnClickListener((v) -> {if (event != null) {
                 eventListener.onSelect(event);
             }});
+            deleteButton.setOnClickListener((v) -> {
+                if (event != null) eventListener.onDeleteEvent(event);
+            });
         }
 
         private void bind(@NonNull Event event) {

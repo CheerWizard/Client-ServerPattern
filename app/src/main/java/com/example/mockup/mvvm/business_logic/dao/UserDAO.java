@@ -14,7 +14,7 @@ import io.reactivex.Single;
 @Dao
 @Singleton
 public interface UserDAO {
-    @Query("SELECT user_id FROM users")
+    @Query("SELECT userId FROM users")
     int selectUserId();
     @Query("SELECT * FROM users")
     User selectUser();

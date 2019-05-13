@@ -83,6 +83,12 @@ public class EventRepository implements IEventRepository {
     }
 
     @Override
+    public void deleteEvent(int codeId) {
+        events4UserDAO.delete(codeId);
+        mobileWebService.
+    }
+
+    @Override
     public void clear() {
         if (disposable != null) {
             disposable.clear();

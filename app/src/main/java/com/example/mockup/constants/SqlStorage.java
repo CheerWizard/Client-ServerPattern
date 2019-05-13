@@ -16,8 +16,8 @@ public final class SqlStorage {
     }
     //columns for tables
     public static final class Columns {
-        public static final String user_id = "user_id";
-        public static final String event_userId = "event_userId";
-        public static final String event_code_id = "event_code_id";
+        public static final String user_id = "userId";
+        public static final String event_userId = "eventUserId";
+        public static final String event_code_id = "eventCodeId";
     }
 }
